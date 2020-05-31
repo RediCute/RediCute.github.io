@@ -1,0 +1,61 @@
+﻿/* DEMO-SPECIFIC STYLES */
+.typewriter .typing {
+	animation: typing 3.5s steps(30, end), blink-caret .7s step-end infinite;
+}
+
+.typewriter .blinker {
+	border-right: .10em solid orange; /* The typwriter cursor */
+}
+
+.typer {
+	color: #fff;
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	white-space: nowrap; /* Keeps the content on a single line */
+	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+	letter-spacing: .1em; /* Adjust as needed */
+	display: inline-block;
+}
+
+/* The typing effect */
+@keyframes typing {
+	from {
+		width: 0
+	}
+
+	to {
+		width: 100%;
+	}
+}
+
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+	from, to {
+		border-color: transparent
+	}
+
+	50% {
+		border-color: orange
+	}
+}
+
+.landing {
+}
+
+.firsttyper {
+	font-size: 8vw;
+}
+
+.secondtyper {
+	font-size: 4.5vw;
+}
+
+.hidetyper {
+	position: absolute;
+	top: -99999vh
+}
+
+.typewriter {
+	text-align: center;
+	align-content: center;
+}

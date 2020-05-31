@@ -1,451 +1,104 @@
 ﻿<!DOCTYPE html>
-<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
-<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<html>
 <head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-   <!--- basic page needs
-   ================================================== -->
-   <meta charset="utf-8">
-	<title>Nickybot</title>
-	<meta name="description" content="">  
-	<meta name="author" content="">
+	<title></title>
 
-   <!-- mobile specific metas
-   ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="CSS/Main.css" />
+	<link rel="stylesheet" href="CSS/TypeWriter.css" />
+	<link rel="stylesheet" href="CSS/Button.css" />
 
- 	<!-- CSS
-   ================================================== -->
-   <link rel="stylesheet" href="css/base.css"> 
-   <link rel="stylesheet" href="css/vendor.css"> 
-   <link rel="stylesheet" href="css/main.css">    
+	<style>
 
-   <!-- script
-   ================================================== -->
-	<script src="js/modernizr.js"></script>
-	<script src="js/pace.min.js"></script>
+		::-webkit-scrollbar {
+			opacity:0;
+			width:0px;
+		}
 
-   <!-- favicons
-	================================================== -->
-	<link rel="icon" type="image/png" href="favicon.png">
+		::-webkit-scrollbar-corner 
+		{
+			opacity:0;
+		}
 
+		body 
+		{
+			overflow-x:hidden;
+		}
+
+		.ParagraphContent 
+		{
+			font-size:3vh;
+			max-width:80vw;
+			display:inline-block;
+			color:lightgray;
+			text-align:justify;
+			text-align-last:center;
+			padding-bottom:2vh;
+		}
+
+		.CenterParagraph 
+		{
+			align-content:center;
+		}
+
+		.ParagraphTitle 
+		{
+			font-size:large;
+			color: #fff;
+			font-size:7vh;
+		}
+
+		.PLine {
+			border-bottom: 1vh solid gray;
+			display: inline-block;
+		}
+
+		.containersa {
+			position: relative;
+			top: 30vh;
+		}
+	</style>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
-<body id="top">
-	
-	<!-- header 
-   ================================================== -->
-   <header class="main-header">
-   	
-   	<div class="logo">
-	      <a href="index.html">RediCute</a>
-	   </div> 
+<body style="position:absolute" onload="OnLoad()" onscroll="scrollToTarget()">
 
-	   <a class="menu-toggle" href="#"><span>Menu</span></a>   	
+	<main style="min-height: 100vh;position:absolute;top:0;left:0">
 
-   </header>
+		<section id="Landing" class="landingSection containersa">
+			<div style="width: 85vw;display: table;margin: 0 auto;">
 
-   <!-- main navigation 
-   ================================================== -->
-   <nav id="menu-nav-wrap">
+				<div class="typewriter landing">
+					<p class="firsttyper typer" style=""><b>&lt;Hi Im NickyBot&gt;</b></p>
+				</div>
 
-   	<h3>Navigation</h3>
-   	<ul class="nav-list">
-   		<li><a class="smoothscroll" href="#intro" title="">Home</a></li>
-   		<li><a class="smoothscroll" href="#features" title="">Features</a></li>
-   		<li><a class="smoothscroll" href="#infos" title="">Product Info</a></li>
-   		<li><a class="smoothscroll" href="#stats" title="">Stats</a></li>
-   		<li><a class="smoothscroll" href="#pricing" title="">Pricing</a></li>
-   		<li><a class="smoothscroll" href="#testimonials" title="">Testimonials</a></li>
-   		<li><a class="smoothscroll" href="#download" title="">Download</a></li>
-   		<li><a class="smoothscroll" href="#subscribe" title="">Newsletter</a></li>
-   	</ul>
+				<div class="typewriter">
+					<p class="secondtyper typer" id="secondtyper">A Socialbot made by <a style="color:#00239CFF">Redi</a><a style="color: #E10600FF">Cute</a></p>
+				</div>
 
-   </nav> <!-- /menu-nav-wrap -->
+			</div>
+		</section>
 
+		<section id="First" style="height:100vh">
+			<div class="CenterParagraph" style="position:relative;top:20vh;">
+				<div class="ParagraphTitle"><p class="PLine">Whats NickyBot?</p></div>
+				<div class="ParagraphContent">In short: Nickybot is an Artificial Intelligence to interact and play games with.</div>
+				
+				<div class="ParagraphContent">Our goal is to create an AI that feels as human to interact with as possible, to achieve that we implemented the ability for Nicky to play games browse Social-Media and talk in diffent VoiceChats. We use Artificial inteligence to have not only a system that can dynamicly react and adjust to changes but also learns with every passing minute. Improvement happens not only due to mentioned AI learning all the time but also through collection of data and adjusting to the user providing a better experience for the User.</div>
+			</div>
+		</section>
+	</main>
+	<script src="JavaScript/Animations.js"></script>
+	<script>
 
-	<!-- main content wrap
-   ================================================== -->
-   <div id="main-content-wrap">
+		function OnLoad() {
 
+			AnimationOnLoad();
+		}
 
-   	<!-- main content wrap
-	================================================== -->
-   	<section id="intro">
-
-   		 <div class="shadow-overlay"></div>
-
-   		<div class="row intro-content">
-   			<div class="col-twelve">
-
-   				<h3 class="animate-intro">.   .   .</h3>
-
-   				<h1 class="animate-intro">
-   					NickyBot </br>
-   					A SocialBot made by RediCute
-   				</h1>
-
-   				<div class="buttons">
-   					<a class="button stroke smoothscroll animate-intro" href="#features" title="">Features</a>
-   					<a class="button stroke smoothscroll animate-intro" href="#download" title="">Stats</a>
-   				</div>
-
-   				<img src="images/app-screenshot-big.jpg" alt="" class="animate-intro">
-
-   			</div> <!-- /twelve -->
-   		</div> <!-- /row -->
-
-   	</section> <!-- /intro -->
-   	<!-- features
-	================================================== -->
-   	<section id="features">
-
-   		<div class="row section-intro group animate-this">
-   			<div class="col-twelve with-bottom-line">
-
-   				<h2 class="">Features!</h2>
-
-   				<p class="lead">Our team of Developers Engeneered many features that are Uniqe to Nicky and lead to a less robotic and more human like interaction with the System. Also they help Nicky make first contact with users in the gaming community through all media. </p>
-
-   			</div>
-   		</div>
-
-   		<div class="row features-wrap">
-
-   			<div class="features-list block-1-3 block-s-1-2 block-tab-full">
-
-   				<div class="bgrid feature animate-this">
-
-   					<span class="feature-count">01.</span>
-
-   					<div class="feature-content">
-
-   						<h3>Voicechat Capabilities</h3>
-
-   						<p>We wanted Nicky to be more then just a Chatbot that could play some games so we created a voice synth and voice recognition to allow the system to use voicechats like Discord and Teamspeak or even ingame voicechats.</p>
-
-   					</div>
-
-   				</div> <!-- /bgrid -->
-
-   				<div class="bgrid feature animate-this">
-
-   					<span class="feature-count">02.</span>
-
-   					<div class="feature-content">
-
-   						<h3>Always Online</h3>
-
-   						<p>We did not have an server outage since SEPTEMBER 2018! Even when patching or having bug our System will fall back onto an older stable version instantly and keep Nicky running and available for chatting and gaming without any distruptions.	</p>
-
-   					</div>
-
-   				</div> <!-- /bgrid -->
-
-   				<div class="bgrid feature animate-this">
-
-   					<span class="feature-count">03.</span>
-
-   					<div class="feature-content">
-
-   						<h3>Games!</h3>
-
-   						<p>We wanted Nicky to be able to play more then just one or two games so we tought the system how to play diffrent game types instead of individual games. Due to this Nicky can lean new games as easily as playing the tutorial.</p>
-
-   					</div>
-
-   				</div> <!-- /bgrid -->
-
-   				<div class="bgrid feature animate-this">
-
-   					<span class="feature-count">04.</span>
-
-   					<div class="feature-content">
-
-   						<h3>Moods</h3>
-
-   						<p>We created a System that allows Nicky to keep "moods" for a longer ammount of time and even over diffrent conversations. This leads to Nicky behaving more like a human having more then just one Conversation and influences.</p>
-
-   					</div>
-
-   				</div> <!-- /bgrid -->
-
-   				<div class="bgrid feature animate-this">
-
-   					<span class="feature-count">05.</span>
-
-   					<div class="feature-content">
-
-   						<h3>Still learning</h3>
-
-   						<p>We built most subsystems using AI so that they get better and better at their job whenever they are used. We achive this with a gradding system that can give back feedback to mentioned systems in real time depending on how a conversation is going-</p>
-
-   					</div>
-
-   				</div> <!-- /bgrid -->
-
-   				<div class="bgrid feature animate-this">
-
-   					<span class="feature-count">06.</span>
-
-   					<div class="feature-content">
-
-   						<h3>Free of Charge</h3>
-
-   						<p>We are well sponsored by our investrors in both monetary as well as material funding. Due to that we can provide all our services completely for free and we intend to keep it this way.</p>
-
-   					</div>
-
-   				</div> <!-- /bgrid -->
-
-   			</div> <!-- /features-list -->
-
-   		</div> <!-- /features-wrap -->
-
-   	</section> <!-- /features -->
-   	<!-- infos
-	================================================== -->
-   	<section id="infos">
-
-   		<div class="info-entry">
-
-   			<div class="half-grey"></div>
-
-   			<div class="row info-entry-content">
-
-   				<div class="media-wrap">
-   					<div class="media animate-this" data-animate="fadeInRight">
-   						<img src="images/app-screenshot-small.jpg" alt="">
-   					</div>
-   				</div>
-
-   				<div class="col-six text-part">
-
-   					<h5 class="animate-this" data-animate="fadeInLeft">Active Development Team producing</h5>
-   					<h2 class="animate-this" data-animate="fadeInLeft">Frequent Updates</h2>
-
-   					<p class="animate-this" data-animate="fadeInLeft">Even after our full 1.0 realease on May 1st 2020 we still intend to roll out updates frequently so that the experience gets more emersive oder time. We are allways thankfull for any feedback we recieve, so please contact us on any form of communication.</p>
-
-   					<a href="#" class="button animate-this" data-animate="fadeInLeft">Contact</a>
-
-   				</div>
-
-   			</div> <!-- /info-entry-content -->
-
-   		</div> <!-- /info-entry -->
-    </section>
-   	<section id="stats" class="count-up">
-
-   		<div class="row">
-   			<div class="col-twelve">
-
-   				<div class="block-1-6 block-s-1-3 block-tab-1-2 block-mob-full stats-list">
-
-   					<div class="bgrid stat">
-
-   						<div class="icon-part">
-   							<i class="icon-pencil-ruler"></i>
-   						</div>
-
-   						<h3 class="stat-count">230000</h3>
-
-   						<h5 class="stat-title">
-   							Lines of code
-   						</h5>
-
-   					</div> <!-- /stat -->
-
-   					<div class="bgrid stat">
-
-   						<div class="icon-part">
-   							<i class="icon-location-user"></i>
-   						</div>
-
-   						<h3 class="stat-count">14667</h3>
-
-   						<h5 class="stat-title">
-   							Users
-   						</h5>
-
-   					</div> <!-- /stat -->
-
-   					<div class="bgrid stat">
-
-   						<div class="icon-part">
-   							<i class="icon-rewards-medal-1"></i>
-   						</div>
-
-   						<h3 class="stat-count">210</h3>
-
-   						<h5 class="stat-title">
-   							Positive ratings
-   						</h5>
-
-   					</div> <!-- /stat -->
-
-   					<div class="bgrid stat">
-
-   						<div class="icon-part">
-   							<i class="icon-alien"></i>
-   						</div>
-
-   						<h3 class="stat-count">123</h3>
-
-   						<h5 class="stat-title">
-   							Games
-   						</h5>
-
-   					</div> <!-- /stat -->
-
-   					<div class="bgrid stat">
-
-   						<div class="icon-part">
-   							<i class="icon-coffee-mug"></i>
-   						</div>
-
-   						<h3 class="stat-count">34</h3>
-
-   						<h5 class="stat-title">
-   							platforms
-   						</h5>
-
-   					</div> <!-- /stat -->
-
-   					<div class="bgrid stat">
-
-   						<div class="icon-part">
-   							<i class="icon-hourglass"></i>
-   						</div>
-
-   						<h3 class="stat-count">20000</h3>
-
-   						<h5 class="stat-title">
-   							Hours spent learning
-   						</h5>
-
-   					</div> <!-- /stat -->
-
-   				</div> <!-- /stats-list -->
-
-   			</div> <!-- /twelve -->
-   		</div> <!-- /row -->
-
-   	</section> <!-- /stats -->
-   
-	   
-
-
-	   <!-- download
-   	================================================== -->
-   	<section id="download">
-
-	   	<div class="overlay"></div>
-
-	   	<div class="row download-content" >
-	   		<div class="col-twelve">
-
-					<div class="text-part">
-						<h2 class="animate-this">How to contact Nicky?</h2>
-
-			   		<p class="lead animate-this"></p>
-					</div>   			
-
-			   	<a class="button large animate-this" href="https://twitter.com/bot_nicky">                               
-			            Click here!
-			      </a>  			
-
-	   		</div>
-	   	</div>
-   	</section> <!-- /download -->
-
-       <!--Hey there!-->
-   
-   </div> <!-- /main-content-wrap -->
-
-
-   <!-- footer
-	================================================== -->
-	<footer id="main-footer">
-
-   	<div class="footer-social-wrap">  
-   		<div class="row">
-					
-	         <ul class="footer-social-list">
-	            <li><a href="https://twitter.com/bot_nicky">
-	              	<i class="fa fa-twitter"></i>
-	            </a></li>
-	            <li><a href="https://www.pinterest.de/cutenickychan/">
-	              	<i class="fa fa-pinterest"></i>
-	            </a></li>
-	            <li><a href="https://www.instagram.com/cutenickychan/">
-	              	<i class="fa fa-instagram"></i>
-	            </a></li>
-	         </ul>
-		         
-			</div> 
-   	</div> <!-- /footer-social-wrap -->
-
-	   <div class="footer-info-wrap">
-
-	   	<div class="row footer-info">
-
-		  		<div class="col-four tab-full">
-		  			<h4><i class="icon-location-map-1"></i> Where to Find Us</h4>
-
-                    <p>
-                        <a href="https://twitter.com/TeamRedicute">Twitter</a>
-                        <br>
-                        <a href="https://github.com/RediCute">Github</a>
-                        <br>
-                    </p>
-		  		</div>
-
-		   	<div class="col-four tab-full collapse">
-	   			<h4><i class="icon-phone-incoming"></i> Get In Touch</h4>
-
-	   			<p><a href="mailto:Redicute@gmail.com">Redicute@gmail.com</a><br />			     
-				   </p>
-	   		</div>
-
-	   		<div class="col-four tab-full">
-	   			<h4><i class="icon-organization-hierarchy-3"></i>Thanks to:</h4>
-
-				   <ul class="footer-link-list">
-				   	<li><a href="https://aws.amazon.com/">Amazon AWS</a></li>
-				   	<li><a>Our Investors</a></li>
-				   </ul>
-	   		</div>
-		   		
-		  	</div>
-	   </div> <!-- /footer-info-wrap -->
-	   	
-	   <div class="footer-bottom"> 
-
-	   	<div class="copyright">
-		     	<span>Template © Copyright Elevate 2016.</span> 
-		     	<span>Design by <a href="http://www.styleshout.com/">styleshout</a></span>	         	
-		   </div>  		
-   	</div>
-	   	
-   </footer>   
-
-   <div id="go-top">
-		<a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
-	</div>
-
-   <!-- preloader
-   ================================================== -->
-   <div id="preloader"> 
-    	<div id="loader"></div>
-   </div> 
-
-   <!-- Java Script
-   ================================================== --> 
-   <script src="js/jquery-2.1.3.min.js"></script>
-   <script src="js/plugins.js"></script>
-   <script src="js/main.js"></script>
-
+	</script>
 </body>
-
 </html>

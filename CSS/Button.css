@@ -1,0 +1,39 @@
+﻿.corner-button {
+  letter-spacing: .02vh;
+  cursor: pointer;
+  background: transparent;
+  border: 0.3rem solid currentColor;
+  padding: 1vh 1.5vh;
+  font-size: 1vh;
+  color: #06c17f;
+  position: relative;
+  transition: color 0.3s; }
+  .corner-button:hover {
+    color: orangered; }
+    .corner-button:hover::before {
+      width: 0; }
+    .corner-button:hover::after {
+      height: 0; }
+  .corner-button:active {
+    border-width: 0.15rem; }
+  .corner-button span {
+    position: relative;
+    z-index: 2; }
+  .corner-button::before, .corner-button::after {
+    content: '';
+    position: absolute;
+    background: #333;
+    z-index: 1;
+    transition: all 0.3s; }
+  .corner-button::before {
+    width: calc(100% - 3rem);
+    height: calc(101% + 0.6rem);
+    top: -0.3rem;
+    left: 50%;
+    transform: translateX(-50%); }
+  .corner-button::after {
+    height: calc(100% - 3rem);
+    width: calc(101% + 0.6rem);
+    left: -0.3rem;
+    top: 50%;
+    transform: translateY(-50%); }
