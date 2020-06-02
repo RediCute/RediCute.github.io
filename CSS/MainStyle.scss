@@ -15,3 +15,50 @@ main {
 	width: 100vw;
 	align-content: center;
 }
+
+::-webkit-scrollbar {
+	opacity: 0;
+	width: 0px;
+}
+
+::-webkit-scrollbar-corner {
+	opacity: 0;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+.ParagraphContent {
+	font-size: 3vh;
+	max-width: 80vw;
+	display: inline-block;
+	color: lightgray;
+	text-align: justify;
+	text-align-last: center;
+	padding-bottom: 2vh;
+}
+
+.CenterParagraph {
+	align-content: center;
+}
+
+.ParagraphTitle {
+	font-size: large;
+	color: #fff;
+	font-size: 7vh;
+}
+
+.PLine {
+	border-bottom: 1vh solid gray;
+	display: inline-block;
+}
+
+.containersa {
+	position: relative;
+	top: 30vh;
+}
+
+section {
+	height: 100vh;
+}

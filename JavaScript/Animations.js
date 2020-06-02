@@ -1,5 +1,10 @@
 ﻿var AnimationsRunning;
 
+function OnLoad() {
+
+	AnimationOnLoad();
+}
+
 function whichAnimationEvent() {
 	var t,
 		el = document.createElement("fakeelement");
